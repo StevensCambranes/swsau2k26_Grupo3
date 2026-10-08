@@ -12,13 +12,53 @@ namespace Capa_Controlador_Criterios
     public class Cls_Controlador_Criterio
     {
         private readonly Cls_Dao dao = new Cls_Dao();
+        private List<Cls_Criterio> ultimaLista = new List<Cls_Criterio>();
 
-        public List<Cls_Criterio> Listar() { return dao.Listar(); }
+        // Lista de criterios lista para enlazar a un DataGridView
+        public DataTable Listar()
+        {
+            ultimaLista = dao.Listar();
+
+            var dt = new DataTable();
+            dt.Columns.Add("Id", typeof(int));
+            dt.Columns.Add("IdRubrica", typeof(int));
+            dt.Columns.Add("NombreRubrica", typeof(string));
+            dt.Columns.Add("Nombre", typeof(string));
+            dt.Columns.Add("Porcentaje", typeof(int));
+            dt.Columns.Add("NivelImportancia", typeof(string));
+            dt.Columns.Add("Descripcion", typeof(string));
+
+            foreach (var c in ultimaLista)
+            {
+                dt.Rows.Add(c.Id, c.IdRubrica, c.NombreRubrica, c.Nombre,
+                            (object)c.Porcentaje ?? DBNull.Value, c.NivelImportancia, c.Descripcion);
+            }
+            return dt;
+        }
+
         public DataTable ListarRubricas() { return dao.ListarRubricas(); }
 
-        // Devuelve (éxito, mensaje) para que la vista solo muestre el resultado
-        public (bool ok, string mensaje) Guardar(Cls_Criterio c)
+        // Porcentaje ya usado en una rúbrica (sin contar el criterio que se edita)
+        public int SumaPorcentajes(int idRubrica, int idCriterioExcluido)
         {
+            return ultimaLista.Where(c => c.IdRubrica == idRubrica && c.Id != idCriterioExcluido)
+                              .Sum(c => c.Porcentaje ?? 0);
+        }
+
+        // Devuelve (éxito, mensaje) para que la vista solo muestre el resultado
+        public (bool ok, string mensaje) Guardar(int id, int idRubrica, string nombre,
+                                                 int? porcentaje, string nivelImportancia, string descripcion)
+        {
+            var c = new Cls_Criterio
+            {
+                Id = id,
+                IdRubrica = idRubrica,
+                Nombre = nombre,
+                Porcentaje = porcentaje,
+                NivelImportancia = nivelImportancia,
+                Descripcion = descripcion
+            };
+
             string error = Validar(c);
             if (error != null) return (false, error);
 
@@ -78,5 +118,6 @@ namespace Capa_Controlador_Criterios
                     return "Error de base de datos: " + texto;
             }
         }
+
     }
 }
