@@ -59,5 +59,15 @@ namespace Capa_Vista_Escalas
             navegador1.SEtiquetas = sEtiquetas;
             navegador1.mostrarDatos();
         }
+
+        private void Btn_Reportes_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("En este apartado se mostrará el reporte con crystal report", "Reportes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void Btn_Ayudas_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("En este apartado se mostrará la ayuda con HTMLHelper", "Ayudas", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
