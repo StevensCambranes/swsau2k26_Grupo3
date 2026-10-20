@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Capa_Modelo_Desc_Criterio
+namespace Capa_Controlador_Desc_Criterio
 {
-    public class Class1
+    internal class Cls_Controlador_DC
     {
     }
 }
