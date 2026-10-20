@@ -46,14 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Frm_Planificacion_Evaluacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Frm_Planificacion_Evaluacion.Designer.cs">
+      <DependentUpon>Frm_Planificacion_Evaluacion.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frm_Planificacion_Evaluacion.resx">
+      <DependentUpon>Frm_Planificacion_Evaluacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,6 +78,50 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mantenimientos\Mantenimiento_Escalas\Capa_Vista_Escalas\Capa_Vista_Escalas.csproj">
+      <Project>{3C99D045-3CD2-419D-BF83-64207605C846}</Project>
+      <Name>Capa_Vista_Escalas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Transacciones\Planificacion\Capa_Vista_Planificacion\Capa_Vista_Planificacion.csproj">
+      <Project>{F54497EB-9B56-4766-BB2F-635631D40519}</Project>
+      <Name>Capa_Vista_Planificacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Transacciones\Rubrica\Capa_Vista_Rubrica\Capa_Vista_Rubrica.csproj">
+      <Project>{A4F49288-9FFD-4AF1-B692-07198C5F0142}</Project>
+      <Name>Capa_Vista_Rubrica</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Transacciones\Criterios\Capa_Vista_Criterios\Capa_Vista_Criterios.csproj">
+      <Project>{EF4577CE-C061-4D34-9514-276A68368BCC}</Project>
+      <Name>Capa_Vista_Criterios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Transacciones\Desc_Criterio\Descripcion_Criterio\Capa_Vista_Desc_Criterio\Capa_Vista_Desc_Criterio.csproj">
+      <Project>{EC7E338B-1B10-418F-B8F7-6FE6BADF6CAF}</Project>
+      <Name>Capa_Vista_Desc_Criterio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Transacciones\Actividad Rubrica\Actividad_Rubrica\Capa_Vista_Actividad\Capa_Vista_Actividad.csproj">
+      <Project>{34AC18DD-E507-4919-9DBE-03E94B8928D5}</Project>
+      <Name>Capa_Vista_Actividad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Transacciones\Cronograma\Cronograma\Capa_Vista_Cronograma\Capa_Vista_Cronograma.csproj">
+      <Project>{5C4A8FD8-0733-49E9-A0C3-25D8E7A04C39}</Project>
+      <Name>Capa_Vista_Cronograma</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Capa_Controlador_Navegador">
+      <HintPath>..\..\componentes\navegador\NavegadorMVC\CapaVistaNavegador\bin\Debug\Capa_Controlador_Navegador.dll</HintPath>
+    </Reference>
+    <Reference Include="Capa_Vista_Navegador">
+      <HintPath>..\..\componentes\navegador\NavegadorMVC\CapaVistaNavegador\bin\Debug\Capa_Vista_Navegador.dll</HintPath>
+    </Reference>
+    <Reference Include="Capa_Controlador_Seguridad">
+      <HintPath>..\..\componentes\seguridad\SeguridadMVC\SeguridadMVC\CapaControlador\bin\Debug\Capa_Controlador_Seguridad.dll</HintPath>
+    </Reference>
+    <Reference Include="Capa_Modelo_Seguridad">
+      <HintPath>..\..\componentes\seguridad\SeguridadMVC\SeguridadMVC\CapaModelo\bin\Debug\Capa_Modelo_Seguridad.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

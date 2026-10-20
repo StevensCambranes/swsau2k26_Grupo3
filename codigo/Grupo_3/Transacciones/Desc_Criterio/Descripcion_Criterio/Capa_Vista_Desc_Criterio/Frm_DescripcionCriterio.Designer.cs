@@ -30,17 +30,17 @@
         {
             this.Lbl_Titulo = new System.Windows.Forms.Label();
             this.Gpb_Datos = new System.Windows.Forms.GroupBox();
-            this.Lbl_Criterio = new System.Windows.Forms.Label();
-            this.Cbo_Criterio = new System.Windows.Forms.ComboBox();
-            this.Lbl_Escala = new System.Windows.Forms.Label();
-            this.Cbo_Escala = new System.Windows.Forms.ComboBox();
-            this.Lbl_Resumen = new System.Windows.Forms.Label();
-            this.Lbl_DescripcionDetallada = new System.Windows.Forms.Label();
-            this.Lbl_EvidenciaRequerida = new System.Windows.Forms.Label();
-            this.Lbl_Observaciones = new System.Windows.Forms.Label();
-            this.Txt_DescripcionDetallada = new System.Windows.Forms.RichTextBox();
-            this.Txt_EvidenciaRequerida = new System.Windows.Forms.RichTextBox();
             this.Txt_Observaciones = new System.Windows.Forms.RichTextBox();
+            this.Txt_EvidenciaRequerida = new System.Windows.Forms.RichTextBox();
+            this.Txt_DescripcionDetallada = new System.Windows.Forms.RichTextBox();
+            this.Lbl_Observaciones = new System.Windows.Forms.Label();
+            this.Lbl_EvidenciaRequerida = new System.Windows.Forms.Label();
+            this.Lbl_DescripcionDetallada = new System.Windows.Forms.Label();
+            this.Lbl_Resumen = new System.Windows.Forms.Label();
+            this.Cbo_Escala = new System.Windows.Forms.ComboBox();
+            this.Lbl_Escala = new System.Windows.Forms.Label();
+            this.Cbo_Criterio = new System.Windows.Forms.ComboBox();
+            this.Lbl_Criterio = new System.Windows.Forms.Label();
             this.Btn_Nuevo = new System.Windows.Forms.Button();
             this.Chk_FiltrarCriterio = new System.Windows.Forms.CheckBox();
             this.Dgv_DescripcionCriterio = new System.Windows.Forms.DataGridView();
@@ -80,66 +80,29 @@
             this.Gpb_Datos.TabStop = false;
             this.Gpb_Datos.Text = "Datos de la descripción";
             // 
-            // Lbl_Criterio
+            // Txt_Observaciones
             // 
-            this.Lbl_Criterio.AutoSize = true;
-            this.Lbl_Criterio.Location = new System.Drawing.Point(30, 28);
-            this.Lbl_Criterio.Name = "Lbl_Criterio";
-            this.Lbl_Criterio.Size = new System.Drawing.Size(42, 13);
-            this.Lbl_Criterio.TabIndex = 0;
-            this.Lbl_Criterio.Text = "Criterio:";
+            this.Txt_Observaciones.Location = new System.Drawing.Point(148, 278);
+            this.Txt_Observaciones.Name = "Txt_Observaciones";
+            this.Txt_Observaciones.Size = new System.Drawing.Size(630, 55);
+            this.Txt_Observaciones.TabIndex = 13;
+            this.Txt_Observaciones.Text = "";
             // 
-            // Cbo_Criterio
+            // Txt_EvidenciaRequerida
             // 
-            this.Cbo_Criterio.FormattingEnabled = true;
-            this.Cbo_Criterio.Location = new System.Drawing.Point(148, 25);
-            this.Cbo_Criterio.Name = "Cbo_Criterio";
-            this.Cbo_Criterio.Size = new System.Drawing.Size(121, 21);
-            this.Cbo_Criterio.TabIndex = 1;
+            this.Txt_EvidenciaRequerida.Location = new System.Drawing.Point(148, 212);
+            this.Txt_EvidenciaRequerida.Name = "Txt_EvidenciaRequerida";
+            this.Txt_EvidenciaRequerida.Size = new System.Drawing.Size(630, 55);
+            this.Txt_EvidenciaRequerida.TabIndex = 12;
+            this.Txt_EvidenciaRequerida.Text = "";
             // 
-            // Lbl_Escala
+            // Txt_DescripcionDetallada
             // 
-            this.Lbl_Escala.AutoSize = true;
-            this.Lbl_Escala.Location = new System.Drawing.Point(30, 66);
-            this.Lbl_Escala.Name = "Lbl_Escala";
-            this.Lbl_Escala.Size = new System.Drawing.Size(83, 13);
-            this.Lbl_Escala.TabIndex = 2;
-            this.Lbl_Escala.Text = "Nivel de escala:";
-            // 
-            // Cbo_Escala
-            // 
-            this.Cbo_Escala.FormattingEnabled = true;
-            this.Cbo_Escala.Location = new System.Drawing.Point(148, 66);
-            this.Cbo_Escala.Name = "Cbo_Escala";
-            this.Cbo_Escala.Size = new System.Drawing.Size(121, 21);
-            this.Cbo_Escala.TabIndex = 3;
-            // 
-            // Lbl_Resumen
-            // 
-            this.Lbl_Resumen.AutoSize = true;
-            this.Lbl_Resumen.Location = new System.Drawing.Point(30, 108);
-            this.Lbl_Resumen.Name = "Lbl_Resumen";
-            this.Lbl_Resumen.Size = new System.Drawing.Size(35, 13);
-            this.Lbl_Resumen.TabIndex = 4;
-            this.Lbl_Resumen.Text = "label3";
-            // 
-            // Lbl_DescripcionDetallada
-            // 
-            this.Lbl_DescripcionDetallada.AutoSize = true;
-            this.Lbl_DescripcionDetallada.Location = new System.Drawing.Point(30, 141);
-            this.Lbl_DescripcionDetallada.Name = "Lbl_DescripcionDetallada";
-            this.Lbl_DescripcionDetallada.Size = new System.Drawing.Size(112, 13);
-            this.Lbl_DescripcionDetallada.TabIndex = 5;
-            this.Lbl_DescripcionDetallada.Text = "Descripción detallada:";
-            // 
-            // Lbl_EvidenciaRequerida
-            // 
-            this.Lbl_EvidenciaRequerida.AutoSize = true;
-            this.Lbl_EvidenciaRequerida.Location = new System.Drawing.Point(30, 212);
-            this.Lbl_EvidenciaRequerida.Name = "Lbl_EvidenciaRequerida";
-            this.Lbl_EvidenciaRequerida.Size = new System.Drawing.Size(104, 13);
-            this.Lbl_EvidenciaRequerida.TabIndex = 7;
-            this.Lbl_EvidenciaRequerida.Text = "Evidencia requerida:";
+            this.Txt_DescripcionDetallada.Location = new System.Drawing.Point(148, 138);
+            this.Txt_DescripcionDetallada.Name = "Txt_DescripcionDetallada";
+            this.Txt_DescripcionDetallada.Size = new System.Drawing.Size(630, 55);
+            this.Txt_DescripcionDetallada.TabIndex = 11;
+            this.Txt_DescripcionDetallada.Text = "";
             // 
             // Lbl_Observaciones
             // 
@@ -150,29 +113,66 @@
             this.Lbl_Observaciones.TabIndex = 9;
             this.Lbl_Observaciones.Text = "Observaciones:";
             // 
-            // Txt_DescripcionDetallada
+            // Lbl_EvidenciaRequerida
             // 
-            this.Txt_DescripcionDetallada.Location = new System.Drawing.Point(148, 138);
-            this.Txt_DescripcionDetallada.Name = "Txt_DescripcionDetallada";
-            this.Txt_DescripcionDetallada.Size = new System.Drawing.Size(630, 55);
-            this.Txt_DescripcionDetallada.TabIndex = 11;
-            this.Txt_DescripcionDetallada.Text = "";
+            this.Lbl_EvidenciaRequerida.AutoSize = true;
+            this.Lbl_EvidenciaRequerida.Location = new System.Drawing.Point(30, 212);
+            this.Lbl_EvidenciaRequerida.Name = "Lbl_EvidenciaRequerida";
+            this.Lbl_EvidenciaRequerida.Size = new System.Drawing.Size(104, 13);
+            this.Lbl_EvidenciaRequerida.TabIndex = 7;
+            this.Lbl_EvidenciaRequerida.Text = "Evidencia requerida:";
             // 
-            // Txt_EvidenciaRequerida
+            // Lbl_DescripcionDetallada
             // 
-            this.Txt_EvidenciaRequerida.Location = new System.Drawing.Point(148, 212);
-            this.Txt_EvidenciaRequerida.Name = "Txt_EvidenciaRequerida";
-            this.Txt_EvidenciaRequerida.Size = new System.Drawing.Size(630, 55);
-            this.Txt_EvidenciaRequerida.TabIndex = 12;
-            this.Txt_EvidenciaRequerida.Text = "";
+            this.Lbl_DescripcionDetallada.AutoSize = true;
+            this.Lbl_DescripcionDetallada.Location = new System.Drawing.Point(30, 141);
+            this.Lbl_DescripcionDetallada.Name = "Lbl_DescripcionDetallada";
+            this.Lbl_DescripcionDetallada.Size = new System.Drawing.Size(112, 13);
+            this.Lbl_DescripcionDetallada.TabIndex = 5;
+            this.Lbl_DescripcionDetallada.Text = "Descripción detallada:";
             // 
-            // Txt_Observaciones
+            // Lbl_Resumen
             // 
-            this.Txt_Observaciones.Location = new System.Drawing.Point(148, 278);
-            this.Txt_Observaciones.Name = "Txt_Observaciones";
-            this.Txt_Observaciones.Size = new System.Drawing.Size(630, 55);
-            this.Txt_Observaciones.TabIndex = 13;
-            this.Txt_Observaciones.Text = "";
+            this.Lbl_Resumen.AutoSize = true;
+            this.Lbl_Resumen.Location = new System.Drawing.Point(30, 108);
+            this.Lbl_Resumen.Name = "Lbl_Resumen";
+            this.Lbl_Resumen.Size = new System.Drawing.Size(35, 13);
+            this.Lbl_Resumen.TabIndex = 4;
+            this.Lbl_Resumen.Text = "label3";
+            // 
+            // Cbo_Escala
+            // 
+            this.Cbo_Escala.FormattingEnabled = true;
+            this.Cbo_Escala.Location = new System.Drawing.Point(148, 66);
+            this.Cbo_Escala.Name = "Cbo_Escala";
+            this.Cbo_Escala.Size = new System.Drawing.Size(121, 21);
+            this.Cbo_Escala.TabIndex = 3;
+            // 
+            // Lbl_Escala
+            // 
+            this.Lbl_Escala.AutoSize = true;
+            this.Lbl_Escala.Location = new System.Drawing.Point(30, 66);
+            this.Lbl_Escala.Name = "Lbl_Escala";
+            this.Lbl_Escala.Size = new System.Drawing.Size(83, 13);
+            this.Lbl_Escala.TabIndex = 2;
+            this.Lbl_Escala.Text = "Nivel de escala:";
+            // 
+            // Cbo_Criterio
+            // 
+            this.Cbo_Criterio.FormattingEnabled = true;
+            this.Cbo_Criterio.Location = new System.Drawing.Point(148, 25);
+            this.Cbo_Criterio.Name = "Cbo_Criterio";
+            this.Cbo_Criterio.Size = new System.Drawing.Size(121, 21);
+            this.Cbo_Criterio.TabIndex = 1;
+            // 
+            // Lbl_Criterio
+            // 
+            this.Lbl_Criterio.AutoSize = true;
+            this.Lbl_Criterio.Location = new System.Drawing.Point(30, 28);
+            this.Lbl_Criterio.Name = "Lbl_Criterio";
+            this.Lbl_Criterio.Size = new System.Drawing.Size(42, 13);
+            this.Lbl_Criterio.TabIndex = 0;
+            this.Lbl_Criterio.Text = "Criterio:";
             // 
             // Btn_Nuevo
             // 
@@ -232,6 +232,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(1021, 648);
             this.Controls.Add(this.Btn_Cancelar);
             this.Controls.Add(this.Btn_Eliminar);
