@@ -10,7 +10,7 @@ namespace Capa_Modelo_Rubrica
 {
     public class Cls_Conexion_Rubrica
     {
-        private readonly string ConexionODBC = "Dsn=bd_SIG"; // DSN de odbc
+        private readonly string ConexionODBC = "Dsn=bd_auditoria"; // DSN de odbc
 
         public OdbcConnection conexion()
         {
