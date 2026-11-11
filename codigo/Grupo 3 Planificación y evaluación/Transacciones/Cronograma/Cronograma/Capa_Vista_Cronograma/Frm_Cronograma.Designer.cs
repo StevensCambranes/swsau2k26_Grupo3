@@ -119,9 +119,9 @@
             this.label4.Font = new System.Drawing.Font("Rockwell", 18F);
             this.label4.Location = new System.Drawing.Point(28, 24);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(192, 35);
+            this.label4.Size = new System.Drawing.Size(248, 35);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Cronograma";
+            this.label4.Text = "Cronograma 514";
             // 
             // label5
             // 
@@ -258,7 +258,7 @@
             this.Dgv_Cronograma.Name = "Dgv_Cronograma";
             this.Dgv_Cronograma.RowHeadersWidth = 51;
             this.Dgv_Cronograma.RowTemplate.Height = 24;
-            this.Dgv_Cronograma.Size = new System.Drawing.Size(633, 151);
+            this.Dgv_Cronograma.Size = new System.Drawing.Size(715, 151);
             this.Dgv_Cronograma.TabIndex = 21;
             this.Dgv_Cronograma.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_Cronograma_CellContentClick);
             // 
@@ -339,7 +339,7 @@
             this.Controls.Add(this.Txt_Id_Cronograma);
             this.Controls.Add(this.label1);
             this.Name = "Frm_Cronograma";
-            this.Text = "Frm_Cronograma";
+            this.Text = "Frm_Cronograma 514";
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Cronograma)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
